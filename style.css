@@ -1,0 +1,195 @@
+* {
+
+  font-family: "Poppins", sans-serif;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+nav {
+
+  background-color: #111;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 0px 50px;
+
+}
+
+nav .logo {
+
+  color: #fff;
+
+  font-size: 30px;
+
+  font-weight: 600;
+
+}
+
+nav ul {
+
+  display: flex;
+
+  height: 60px;
+
+  align-items: center;
+
+}
+
+nav ul li {
+
+  list-style: none;
+
+}
+
+nav ul li {
+
+  margin: 0px 10px;
+
+}
+
+nav ul li a {
+
+  text-decoration: none;
+
+  color: #fff;
+
+  font-size: 18px;
+
+  font-weight: 500;
+
+  /* background-color: #fff; */
+
+  border-radius: 5px;
+
+  padding: 5px 15px;
+
+}
+
+nav ul li a:hover,
+
+nav ul li a.active {
+
+  text-decoration: none;
+
+  color: #1b1b1b;
+
+  font-size: 18px;
+
+  background-color: #fff;
+
+  border-radius: 5px;
+
+  padding: 5px 15px;
+
+}
+
+nav .menu-btn i
+
+{
+
+    color: #fff;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    display: none;
+
+}
+
+#click
+
+{
+
+    display: none;
+
+}
+
+@media (max-width: 900px) {
+
+    nav .menu-btn i
+
+    {
+
+        display: block;
+
+    }
+
+    #click:checked~.menu-btn i::before
+
+    {
+
+        content: "\f00d";
+
+    }
+
+  nav ul {
+
+    position: fixed;
+
+    top: 44px;
+
+    display: block;
+
+    height: 100vh;
+
+    text-align: center;
+
+    width: 100%;
+
+    left: -100%;
+
+    background-color: #1b1b1b;
+
+    transition: all 0.3s ease;
+
+  }
+
+  #click:checked ~ ul
+
+  {
+
+      left: 0%;
+
+  }
+
+  nav ul li {
+
+    margin: 40px 0px;
+
+  }
+
+  nav ul li a {
+
+    font-size: 24px !important;
+
+    display: block;
+
+   
+
+  }
+
+  nav ul li a:hover,
+
+  nav ul li a.active {
+
+ 
+
+    color: cyan;
+
+    
+
+    background-color: #1b1b1b;
+
+    
+
+  }
+
+}
